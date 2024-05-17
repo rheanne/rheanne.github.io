@@ -338,7 +338,7 @@ div.gallery {
     position: relative;
     width: max-content;
     margin: 3rem auto .75rem;
-    font-size: 30px;
+    font-size: 25px;
     color: var(--title-color);
 
 }
