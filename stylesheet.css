@@ -280,6 +280,7 @@ img {
 div.gallery {
     border: 1px solid #ccc;
     z-index: -1;
+
   }
   
   div.gallery:hover {
@@ -301,7 +302,7 @@ div.gallery {
   }
   
   .responsive {
-    padding: 5% 20px;
+    padding: 3% 20px;
     float: left;
     width: 20%;
     font-family: monospace;
@@ -314,6 +315,7 @@ div.gallery {
     }
 .memories__description {
     padding-left: 5%;
+    padding-bottom: 5%;
 }
 
 
