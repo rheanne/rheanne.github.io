@@ -29,6 +29,7 @@ const linkAction = () => {
 navLink.forEach(n => n.addEventListener('click', linkAction))
 
 
+
 /*=============== GSAP ANIMATION ===============*/
 gsap.from('.home__points', 1.5, {opacity: 0, y: -300, delay: .2})
 gsap.from('.home__flyappa', 1.5, {opacity: 0, x: 300, y: -180, delay: .2})
