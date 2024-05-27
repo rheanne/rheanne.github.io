@@ -1,109 +1,160 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--FAVICON-->
-    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon1.0/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon1.0/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon1.0/favicon-16x16.png">
-    <link rel="manifest" href="/assets/favicon1.0/site.webmanifest">
+  <script src="login.js"></script>
+  <title> ANNIVERSARY - WEBSITE </title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
 
-    <!--REMIXICONS-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css" crossorigin="">
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
 
-      <!--=============== CSS ===============-->
-      <link rel="stylesheet" href="/stylesheet.css">
+/* Set a style for all buttons */
+button {
+  background-color: #ae7c3f;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
 
-    <title> ANNIVERSARY - WEBSITE </title>
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.avatar {
+  width: 20%;
+  border-radius: 40%;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+</style>
 </head>
-
 <body>
 
-    <header class="header" id="header">
-
-        <nav class="nav__container"> 
-            <a href="#" class="nav__logo">
-                <i class=""> <!--<img src="assets/appa-logo.webp" width="30px">-->  </i> 
-            </a>
-
-            <div class="nav__menu" id="nav-menu">
-
-                <ul class="nav__list">
-                    <li class="nav__item1">
-                        <a href="#" class="nav__link">HOME</a>
-                    </li>
-                    <li class="nav__item2">
-                        <a href="/memories.html" class="nav__link">MEMORIES</a>
-                    </li>
-                    
-                   
-                    <li class="nav__item4">
-                        <a href="/letter.html" class="nav__link">LETTER TO YOU c:</a>
-                    </li>
-                </ul>
-
-                <a href="https://github.com/rheanne" class="nav__button">GITHUB</a>
-                
-                <!--CLOSE BUTTON-->
-                <div class="nav__close" id="nav-close">
-                    <i class="ri-close-line" ></i>
-                </div>
-            </div>
 
 
-                <!--TOGGLE BUTTON-->
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class="ri-apps-2-line"></i>
-                </div>
-                
-        </nav>
-    </header>
+<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">LOGIN</button>
 
-    <main class="main">
-        <section class="home">
-
-        <div class="home__containter container">
-
-            <div class="home__content">
-                <h3 class="home__subtitle">
-                    RHEANNE ALIBUDBUD | CSIS STUDENT
-                </h3>
-                <h1 class="home__title">
-                    <span>
-                        Bello, <br>
-                        Earvin
-                    </span>
-                    <img src="/assets/line.png">
-                </h1>
-
-                <p class="home__description">
-                    This is the "project" I've been working on! (this will legitimately become my portfolio after I change some things around so no worry!) <br>
-                    anyways...<br>
-                    HAPPY 2 YEAR ANNIVERSARY :D
-                </p>
-
-                <a href="#" class="home__button">this button does nothing, it just looks cool</a>
-            </div>
-
-            <div class="home__images">
-                <img src="/assets/points-space.svg" alt="" class="home__points">
-                <img src="/assets/appa-flying.png" alt="" class="home__flyappa">
-                
-            </div>
-        </div>
-                <!--<img src="/assets/cloud1.webp" alt="" class="home__cloud-1"> -->
-                <img src="/assets/cloud1.webp" alt="" class="home__cloud-2a">
-                <img src="/assets/cloud2.webp" alt="" class="home__cloud-2b">
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/main.html"  onsubmit="passcheck()">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="/assets/appa-line.png"  alt="Appa" class="avatar">
+    </div>
+    <div class="container">
+      <label for="psw"><b>Enter Password | hint: all numbers, date of ANNIVERSARY (MM/DD/YYYY) </b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required id="pass1">
         
-        </section>
+      <button type="submit" id="enterbtn">Enter</button>
+   
+    </div>
+
+  </form>
+</div>
 
 
-    </main>
-    <!--GSAP FOR ANIMATIONS-->
-    <script src="/gsap.min.js"></script>
-    <!--MAIN JS-->
-    <script src="/script.js"></script>
 </body>
+</html>
+
+
+
 </html>
