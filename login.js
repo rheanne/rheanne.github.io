@@ -14,7 +14,7 @@ var password = "06/20/2022";
 
 function passcheck() {
     if(document.getElementById('pass1').value != password) {
-        alert("Wow...you don't know our anniversary :c")
+        alert("Wow...you don't know our anniversary :c. Press Ok to CONTINUE")
         return false;
     }
 
