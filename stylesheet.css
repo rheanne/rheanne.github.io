@@ -275,6 +275,10 @@ img {
     left: -4rem;
 }
 
+.chess_icon {
+    width: 24px;
+}
+
 /*==MEMORIES==*/
 
 div.gallery {
