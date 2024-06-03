@@ -5,7 +5,39 @@
   <title> ANNIVERSARY - WEBSITE </title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-body {font-family: Arial, Helvetica, sans-serif;}
+  :root {
+    --header-height:3.5rem;
+    /*========== Colors ==========*/
+  /*Color mode HSL(hue, saturation, lightness)*/
+  --first-color: hsl(47, 58%, 48%);
+  --first-color-alt: hsl(63, 28%, 38%);
+  --second-color: hsl(30, 2%, 57%);
+  --second-color-alt: hsl(40, 2%, 28%);
+  --title-color: hsl(0, 0%, 100%);
+  --text-color: hsl(57, 85%, 90%);
+  --body-color: hsl(48, 4%, 25%);
+
+  /*========== Font and typography ==========*/
+  /*.5rem = 8px | 1rem = 16px ...*/
+  --body-font: "Montserrat", sans-serif;
+  --biggest-font-size: 2rem;
+  --normal-font-size: .938rem;
+  --small-font-size: .813rem;
+
+  /*========== Font weight ==========*/
+  --font-medium: 500;
+  --font-semi-bold: 600;
+  --font-bold: 700;
+
+  /*========== z index ==========*/
+  --z-tooltip: 10;
+  --z-fixed: 100;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--body-color)
+}
 
 /* Full-width input fields */
 input[type=text], input[type=password] {
@@ -18,16 +50,31 @@ input[type=text], input[type=password] {
 }
 
 /* Set a style for all buttons */
-button {
-  background-color: #ae7c3f;
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  cursor: pointer;
-  width: 100%;
+#loginbtn {
+  font: var(--body-font);
+  font-size: 60px;
+  background-color: var(--body-color);
+  border: 2px solid var(--text-color);
+  padding: 1rem 3rem;
+  border-radius: 4rem;
+  color: var(--title-color);
+  
 }
 
+.container {
+  height: 700px;
+  position: relative;
+
+}
+
+.center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
 button:hover {
   opacity: 0.8;
 }
@@ -99,6 +146,7 @@ span.psw {
   cursor: pointer;
 }
 
+
 /* Add Zoom Animation */
 .animate {
   -webkit-animation: animatezoom 0.6s;
@@ -129,16 +177,20 @@ span.psw {
 </head>
 <body>
 
+<div class="container">
+  <div class="center">
+    <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;" id="loginbtn">LOGIN</button>
+  </div>
+</div>
 
 
-<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">LOGIN</button>
 
 <div id="id01" class="modal">
   
-  <form class="modal-content animate" action="/main.html"  onsubmit="passcheck()">
+  <form class="modal-content animate" action="/main.html" onsubmit="return passcheck()">
     <div class="imgcontainer">
-      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-      <img src="/assets/appa-line.png"  alt="Appa" class="avatar">
+        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+        <img src="/assets/appa-line.png" alt="Appa" class="avatar">
     </div>
     <div class="container">
       <label for="psw"><b>Enter Password | hint: date of ANNIVERSARY (MM/DD/YYYY) </b></label>
