@@ -284,7 +284,7 @@ img {
 div.gallery {
     border: 1px solid #ccc;
     z-index: -1;
-
+    
   }
   
   div.gallery:hover {
@@ -294,6 +294,7 @@ div.gallery {
   div.gallery img {
     width: 100%;
     height: auto;
+    
   }
   
   div.desc {
@@ -306,6 +307,7 @@ div.gallery {
   }
   
   .responsive {
+    
     padding: 3% 20px;
     float: left;
     width: 72%;
@@ -324,40 +326,19 @@ div.gallery {
 
 
 /*==LETTER CSS==*/
-.letter__subtitle{
-    padding-top: 30%;
-    font-size: var(--small-font-size);
-    margin-bottom: .5rem;
-    letter-spacing: 1px;
+
+
+  /* Centered Image Code */
+  
+#letter_pic {
+    display: block;
+    width: 60%;
+    margin: auto;
     
-}
+    width: 75%;
+    height: 80%;
+  }
 
-.letter__title{
-    position: relative;
-    width: max-content;
-    margin: 3rem auto .75rem;
-    font-size: var(--biggest-font-size);
-    color: var(--title-color);
-    
-}
-
-.letter__description{
-    line-height:150% ;
-    margin-bottom: 10rem;
-    font-size: 350%;
-    
-}
-
-.letter__title span{
-    position: relative;
-    z-index: 5;
-}
-
-.letter__title img{
-    position: absolute;
-    right: 0;
-    bottom: 0;
-}
 .nav__linkL {
     color: whitesmoke;
     font-weight: var(--font-semi-bold);
