@@ -30,11 +30,11 @@ html, body{
 }
 
 #board .square.light{
-	background-color:#ffce9e;
+	background-color:#d6cdae;
 }
 
 #board .square.dark{
-	background-color:#d18b47;
+	background-color:#a98655;
 }
 
 #board .square.selected{
@@ -97,7 +97,7 @@ html, body{
 	width:100%;
 	z-index:0;
 	opacity:0;
-    webkit-transition: all .3s ease-out;
+    -webkit-transition: all .3s ease-out;
     -moz-transition: all .3s ease-out;
     -ms-transition: all .3s ease-out;
     -o-transition: all .3s ease-out;
